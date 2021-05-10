@@ -3,6 +3,7 @@ package com.capitole.ecommerce.unit.repositories;
 import com.capitole.ecommerce.core.entities.Price;
 import com.capitole.ecommerce.core.exceptions.PriceNotFoundException;
 import com.capitole.ecommerce.core.repositories.GetPriceByBrandAndProductAndDateRepository;
+import com.capitole.ecommerce.repositories.GetPriceByBrandAndProductAndDateRepositoryImpl;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

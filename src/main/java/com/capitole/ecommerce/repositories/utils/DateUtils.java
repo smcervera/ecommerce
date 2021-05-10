@@ -1,4 +1,4 @@
-package com.capitole.ecommerce.unit.repositories.utils;
+package com.capitole.ecommerce.repositories.utils;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

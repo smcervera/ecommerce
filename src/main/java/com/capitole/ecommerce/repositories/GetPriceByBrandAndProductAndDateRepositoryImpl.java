@@ -1,9 +1,9 @@
-package com.capitole.ecommerce.unit.repositories;
+package com.capitole.ecommerce.repositories;
 
 import com.capitole.ecommerce.core.exceptions.PriceNotFoundException;
 import com.capitole.ecommerce.core.entities.Price;
 import com.capitole.ecommerce.core.repositories.GetPriceByBrandAndProductAndDateRepository;
-import com.capitole.ecommerce.unit.repositories.utils.DateUtils;
+import com.capitole.ecommerce.repositories.utils.DateUtils;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

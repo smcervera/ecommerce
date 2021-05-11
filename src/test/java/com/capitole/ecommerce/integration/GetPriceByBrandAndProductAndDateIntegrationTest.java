@@ -25,7 +25,7 @@ public class GetPriceByBrandAndProductAndDateIntegrationTest {
     }
 
     @Test
-    public void case_one() throws JsonProcessingException {
+    public void when_getPrice_case1_return_ok() throws JsonProcessingException {
 
         ExtractableResponse<Response> response = RestAssured.get("/brands/1/products/35455?date=2020-06-14T10:00:00")
                 .then()
@@ -38,7 +38,7 @@ public class GetPriceByBrandAndProductAndDateIntegrationTest {
     }
 
     @Test
-    public void case_two() throws JsonProcessingException {
+    public void when_getPrice_case2_return_ok() throws JsonProcessingException {
 
         ExtractableResponse<Response> response = RestAssured.get("/brands/1/products/35455?date=2020-06-14T16:00:00")
                 .then()
@@ -51,7 +51,7 @@ public class GetPriceByBrandAndProductAndDateIntegrationTest {
     }
 
     @Test
-    public void case_three() throws JsonProcessingException {
+    public void when_getPrice_case3_return_ok() throws JsonProcessingException {
 
         ExtractableResponse<Response> response = RestAssured.get("/brands/1/products/35455?date=2020-06-14T21:00:00")
                 .then()
@@ -64,7 +64,7 @@ public class GetPriceByBrandAndProductAndDateIntegrationTest {
     }
 
     @Test
-    public void case_four() throws JsonProcessingException {
+    public void when_getPrice_case4_return_ok() throws JsonProcessingException {
 
         ExtractableResponse<Response> response = RestAssured.get("/brands/1/products/35455?date=2020-06-15T10:00:00")
                 .then()
@@ -77,7 +77,7 @@ public class GetPriceByBrandAndProductAndDateIntegrationTest {
     }
 
     @Test
-    public void case_five() throws JsonProcessingException {
+    public void when_getPrice_case5_return_ok() throws JsonProcessingException {
 
         ExtractableResponse<Response> response = RestAssured.get("/brands/1/products/35455?date=2020-06-16T21:00:00")
                 .then()

@@ -48,7 +48,7 @@ public class GetPriceByBrandAndProductAndDateRepositoryImplTest {
     }
 
     @Test
-    public void give_product_brand_date_return_price() {
+    public void when_execute_repository_getPriceByBrandAndProductAndDate_return_object() {
 
         LocalDateTime time = LocalDateTime.parse("2020-06-14 10:00:00", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 
@@ -58,7 +58,7 @@ public class GetPriceByBrandAndProductAndDateRepositoryImplTest {
     }
 
     @Test
-    public void give_product_brand_date_return_not_found() {
+    public void when_execute_repository_getPriceByBrandAndProductAndDate_return_exception() {
 
         Assertions.assertThrows(PriceNotFoundException.class, () -> {
             repository.execute(1L, 2L, LocalDateTime.now());

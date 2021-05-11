@@ -28,7 +28,7 @@ $ ./gradlew -x test build
 $ ./gradlew build 
 ```
 
-##Paths
+## Paths
 - Swagger Documentation
 ```
 {host}/swagger-ui/
@@ -49,6 +49,13 @@ The name of the script must have the following format:
 Where:
 * ``timestamp``: YYYYMMDDhhmm
 * ``description``: a simple description
+
+## Why JDBC??
+- I dont need a CRUD operations
+- With this way a can use the DTOS with domain without create model objects
+- JPA adds unnecesary complexity
+
+link with performance result: https://docs.google.com/document/d/1TCgaEFFLZhqXimOy8j20lx2pjCJxAj1BUAxr8lsSwFg/edit?usp=sharing
 
 ## Performance tests using K6
 

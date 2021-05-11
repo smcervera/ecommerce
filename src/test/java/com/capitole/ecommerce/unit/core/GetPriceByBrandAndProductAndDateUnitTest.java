@@ -29,7 +29,7 @@ public class GetPriceByBrandAndProductAndDateUnitTest {
     }
 
     @Test
-    public void give_product_brand_date_return_price() {
+    public void when_execute_usercase_getPriceByBrandAndProductAndDate_return_object() {
 
         when(getPriceByBrandAndProductAndDateRepository
                 .execute(eq(1L), eq(1L), any()))
@@ -41,7 +41,7 @@ public class GetPriceByBrandAndProductAndDateUnitTest {
     }
 
     @Test
-    public void give_product_brand_date_return_not_found() {
+    public void when_execute_usercase_getPriceByBrandAndProductAndDate_return_exception() {
 
         when(getPriceByBrandAndProductAndDateRepository
                 .execute(eq(1L), eq(1L), any()))

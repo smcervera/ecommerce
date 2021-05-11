@@ -51,6 +51,8 @@ Where:
 * ``description``: a simple description
 
 ## Why JDBC??
+the implementation of spring data is in the ``feature/spring-data`` branch with which I made the performance comparison
+
 - I dont need a CRUD operations
 - With this way a can use the DTOS with domain without create model objects
 - JPA adds unnecesary complexity

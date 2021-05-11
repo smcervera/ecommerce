@@ -50,6 +50,16 @@ Where:
 * ``timestamp``: YYYYMMDDhhmm
 * ``description``: a simple description
 
+## Performance tests using K6
+
+Requirements:
+
+- https://docs.k6.io/docs/installation
+
+Running:
+
+`k6 run --vus 10 --duration 10s src/test/java/com/capitole/ecommerce/performance/GetPriceByBrandAndProductAndDateStressTest.js`
+
 ## Observations
 * In a production environment I would make different ``application.properties (profiles)`` with each config using env var for credentials
 * Into ``PricesController`` if we have many options about price response, I would implement graphql
